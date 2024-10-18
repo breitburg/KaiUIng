@@ -1,29 +1,4 @@
-# KaiUIng
-
-KaiUIng is a fork of [AdrianMachado's KaiUI](https://github.com/AdrianMachado/KaiUI) which is a UI component library for building KaiOS apps. Unfortunately, that library doesn't seem to be maintained anymore and the components are for React only.
-
-KaiUIng aims to provide styling only, and framework users use it to create UI libraries for the frameworks.
-
-For instance, to use the InfernoJS bindings, you can use KaiUIngInferno.
-
-## Building and Usage
-
-Simply install it with npm or yarn:
-
-```
-npm install kaiuing
-yarn add kaiuing
-```
-
-### The Inferno bindings
-
-To use the Inferno bindings:
-
-```
-yarn add kaiuing-inferno
-```
-
-There is no docs at the moment. But you can see [chooj](https://github.com/farooqkz/chooj) on how to use these components.
+# Usage
 
 ## Getting Started
 
@@ -45,11 +20,7 @@ To use KaiUIng with simple HTML/CSS, follow these steps:
    <button class="kai-button">Click me</button>
    ```
 
-For more detailed usage instructions, refer to the [usage documentation](docs/usage.md).
-
 ## Components
-
-To see a list of components, visit [here](https://github.com/farooqkz/KaiUIng/tree/master/src/components). Documentations are to be written.
 
 ### ArrowListItem
 
@@ -67,8 +38,6 @@ The `ArrowListItem` component is used to display a list item with an arrow icon.
 </div>
 ```
 
-For more details, refer to the [ArrowListItem documentation](docs/components/ArrowListItem.md).
-
 ### Audio
 
 The `Audio` component is used to display an audio player. It can be used as follows:
@@ -82,8 +51,6 @@ The `Audio` component is used to display an audio player. It can be used as foll
 </div>
 ```
 
-For more details, refer to the [Audio documentation](docs/components/Audio.md).
-
 ### BodyTextListItem
 
 The `BodyTextListItem` component is used to display a list item with a header and body text. It can be used as follows:
@@ -95,8 +62,6 @@ The `BodyTextListItem` component is used to display a list item with a header an
 </div>
 ```
 
-For more details, refer to the [BodyTextListItem documentation](docs/components/BodyTextListItem.md).
-
 ### Button
 
 The `Button` component is used to display a button. It can be used as follows:
@@ -104,8 +69,6 @@ The `Button` component is used to display a button. It can be used as follows:
 ```html
 <button class="kai-button-input">Click me</button>
 ```
-
-For more details, refer to the [Button documentation](docs/components/Button.md).
 
 ### Camera
 
@@ -119,8 +82,6 @@ The `Camera` component is used to display a camera feed. It can be used as follo
   </div>
 </div>
 ```
-
-For more details, refer to the [Camera documentation](docs/components/Camera.md).
 
 ### CheckboxListItem
 
@@ -138,8 +99,6 @@ The `CheckboxListItem` component is used to display a list item with a checkbox.
 </div>
 ```
 
-For more details, refer to the [CheckboxListItem documentation](docs/components/CheckboxListItem.md).
-
 ### DateSelector
 
 The `DateSelector` component is used to display a date selector. It can be used as follows:
@@ -154,8 +113,6 @@ The `DateSelector` component is used to display a date selector. It can be used 
   </div>
 </div>
 ```
-
-For more details, refer to the [DateSelector documentation](docs/components/DateSelector.md).
 
 ### Dialog
 
@@ -173,8 +130,6 @@ The `Dialog` component is used to display a dialog. It can be used as follows:
 </div>
 ```
 
-For more details, refer to the [Dialog documentation](docs/components/Dialog.md).
-
 ### Header
 
 The `Header` component is used to display a header. It can be used as follows:
@@ -184,8 +139,6 @@ The `Header` component is used to display a header. It can be used as follows:
   <h1>Header Text</h1>
 </div>
 ```
-
-For more details, refer to the [Header documentation](docs/components/Header.md).
 
 ### IconButton
 
@@ -197,8 +150,6 @@ The `IconButton` component is used to display a button with an icon. It can be u
   Button Text
 </button>
 ```
-
-For more details, refer to the [IconButton documentation](docs/components/IconButton.md).
 
 ### IconListItem
 
@@ -216,8 +167,6 @@ The `IconListItem` component is used to display a list item with an icon. It can
 </div>
 ```
 
-For more details, refer to the [IconListItem documentation](docs/components/IconListItem.md).
-
 ### ImageListItem
 
 The `ImageListItem` component is used to display a list item with an image. It can be used as follows:
@@ -234,8 +183,6 @@ The `ImageListItem` component is used to display a list item with an image. It c
 </div>
 ```
 
-For more details, refer to the [ImageListItem documentation](docs/components/ImageListItem.md).
-
 ### OptionMenu
 
 The `OptionMenu` component is used to display an option menu. It can be used as follows:
@@ -247,8 +194,6 @@ The `OptionMenu` component is used to display an option menu. It can be used as 
   <div class="kai-om-item">Option 2</div>
 </div>
 ```
-
-For more details, refer to the [OptionMenu documentation](docs/components/OptionMenu.md).
 
 ### ProgressBar
 
@@ -263,8 +208,6 @@ The `ProgressBar` component is used to display a progress bar. It can be used as
   </div>
 </div>
 ```
-
-For more details, refer to the [ProgressBar documentation](docs/components/ProgressBar.md).
 
 ### RadioButtonListItem
 
@@ -282,8 +225,6 @@ The `RadioButtonListItem` component is used to display a list item with a radio 
 </div>
 ```
 
-For more details, refer to the [RadioButtonListItem documentation](docs/components/RadioButtonListItem.md).
-
 ### Separator
 
 The `Separator` component is used to display a separator. It can be used as follows:
@@ -293,8 +234,6 @@ The `Separator` component is used to display a separator. It can be used as foll
   <span class="kai-separator-text">Separator Text</span>
 </div>
 ```
-
-For more details, refer to the [Separator documentation](docs/components/Separator.md).
 
 ### Slider
 
@@ -312,8 +251,6 @@ The `Slider` component is used to display a slider. It can be used as follows:
 </div>
 ```
 
-For more details, refer to the [Slider documentation](docs/components/Slider.md).
-
 ### SoftKey
 
 The `SoftKey` component is used to display soft keys. It can be used as follows:
@@ -325,22 +262,3 @@ The `SoftKey` component is used to display soft keys. It can be used as follows:
   <button class="kai-softkey-btn">Right</button>
 </div>
 ```
-
-For more details, refer to the [SoftKey documentation](docs/components/SoftKey.md).
-
-## Contributing
-
-There are much to be done. See `TODO.md`
-
-To contribute to this project, follow these guidelines:
-
-1. Fork the repository and create a new branch for your feature or bugfix.
-2. Write tests for your changes and ensure all tests pass.
-3. Submit a pull request with a clear description of your changes.
-
-For more details, refer to the [contributing guidelines](CONTRIBUTING.md).
-
-## License
-
- - KaiUIng under ISC license.
- - KaiUIng-Inferno under LGPLv3 or later license as published by FSF.
