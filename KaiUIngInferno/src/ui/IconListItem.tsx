@@ -6,7 +6,7 @@ import morecolor from "../morecolor";
 const prefixCls = "kai-il";
 const lineCls = `${prefixCls}-line`;
 const itemCls = prefixCls;
-const primaryCls = `${prefixCls}-line`;
+const primaryCls = `${prefixCls}-primary`; // Fixed: Changed from line to primary class
 
 interface IconListItemProps {
   isFocused?: boolean;
@@ -29,13 +29,14 @@ function IconListItem(props: IconListItemProps) {
   const iconCls = `${prefixCls}-icon-${isFocused ? "focused" : "unfocused"}`;
   const secondaryCls = `${prefixCls}-secondary ${secondary ? "" : "hidden"}`;
   const disabledCls = disabled ? `${prefixCls}-disabled` : "";
+  
   let renderedIcon;
   if (iconSrc)
     renderedIcon = <img src={iconSrc} alt="" width={iconWidth || 50} />;
   else if (typeof icon === "string" && icon.startsWith("kai"))
     renderedIcon = <span className={icon} style={{ width: iconWidth.toString() }} />;
-  // Then we assume it is a valid element TODO: check for this
-  else renderedIcon = <span>{icon}</span>;
+  else 
+    renderedIcon = <span>{icon}</span>;
 
   return (
     <div
@@ -56,12 +57,12 @@ function IconListItem(props: IconListItemProps) {
         {renderedIcon}
       </div>
       <div className={lineCls}>
-        <label className={secondaryCls} $HasTextChildren>
-          {secondary}
-        </label>
         <span className={primaryCls} $HasTextChildren>
           {primary}
         </span>
+        <label className={secondaryCls} $HasTextChildren>
+          {secondary}
+        </label>
       </div>
     </div>
   );
